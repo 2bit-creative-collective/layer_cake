@@ -7,5 +7,7 @@ package twobit.layercake.layer.bitmapdatalayer
     [RunWith("org.flexunit.runners.Suite")]
     public class BitmapDataLayerSuite
     {
+        public var bitmapDataCellTest:BitmapDataCellTest;
+        public var bitmapDataLayerTest:BitmapDataLayerTest;
     }
 }

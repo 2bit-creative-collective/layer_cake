@@ -8,10 +8,6 @@ package twobit.layercake.layer.perlinlayer
     public class PerlinLayer
         extends BitmapDataLayer
     {
-        public function PerlinLayer()
-        {
-        }
-
         public function generate(seed:int):void
         {
             _data.perlinNoise(width, height, 3, seed, false, false);

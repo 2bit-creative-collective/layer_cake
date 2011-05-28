@@ -7,5 +7,6 @@ package twobit.layercake.layer.perlinlayer
     [RunWith("org.flexunit.runners.Suite")]
     public class PerlinLayerSuite
     {
+        public var perlinLayerTest:PerlinLayerTest;
     }
 }

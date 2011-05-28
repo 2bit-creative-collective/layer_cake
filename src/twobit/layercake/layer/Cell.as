@@ -10,13 +10,13 @@ package twobit.layercake.layer
         function get paletteIndex():int;
         function set paletteIndex(index:int):void;
 
-        function get red():int;
-        function set red(r:int):void;
-        function get green():int;
-        function set green(g:int):void;
-        function get blue():int;
-        function set blue(b:int):void;
-        function setRedGreenBlue(r:int, g:int, b:int):void;
+        function get red():uint;
+        function set red(r:uint):void;
+        function get green():uint;
+        function set green(g:uint):void;
+        function get blue():uint;
+        function set blue(b:uint):void;
+        function setRedGreenBlue(r:uint, g:uint, b:uint):void;
         function getRedGreenBlue():uint;
 
         function get up():Cell;
