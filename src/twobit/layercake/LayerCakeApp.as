@@ -8,6 +8,7 @@ package twobit.layercake
     import flash.display.StageQuality;
     import flash.events.Event;
 
+
     /**
      * Copyright (C) 2011 David Wagner
      */
@@ -43,7 +44,7 @@ package twobit.layercake
         {
             layer = new PerlinLayer();
             layer.create(256, 256);
-            layer.generate(150776);
+            PerlinLayer(layer).generate(150776);
 
             addChild(layer.displyable);
         }
