@@ -47,5 +47,95 @@ package twobit.layercake.layer.bitmapdatalayer
             assertEquals("Checking 1, 1 RGB", 0xddeeff, d._cacheRGB);
             assertEquals("Checking 1, 1 getRedGreenBlue", 0xddeeff, d.getRedGreenBlue());
         }
+
+        [Test]
+        public function setRedToZeroTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            d.red = 00;
+
+            assertEquals("Checking 1, 1 RGB", 0x00eeff, d._cacheRGB);
+            assertEquals("Checking 1, 1 getRedGreenBlue", 0x00eeff, d.getRedGreenBlue());
+        }
+
+        [Test]
+        public function setRedToOverflowed55Test():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            d.red = 0x5555;
+
+            assertEquals("Checking 1, 1 RGB", 0x55eeff, d._cacheRGB);
+            assertEquals("Checking 1, 1 getRedGreenBlue", 0x55eeff, d.getRedGreenBlue());
+        }
+
+        [Test]
+        public function setGreenToZeroTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            d.green = 00;
+
+            assertEquals("Checking 1, 1 RGB", 0xdd00ff, d._cacheRGB);
+            assertEquals("Checking 1, 1 getRedGreenBlue", 0x0dd00ff, d.getRedGreenBlue());
+        }
+
+        [Test]
+        public function setGreenToOverflowedFFTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            d.green = 0x5555;
+
+            assertEquals("Checking 1, 1 RGB", 0xdd55ff, d._cacheRGB);
+            assertEquals("Checking 1, 1 getRedGreenBlue", 0xdd55ff, d.getRedGreenBlue());
+        }
+
+        [Test]
+        public function setBlueToZeroTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            d.blue = 00;
+
+            assertEquals("Checking 1, 1 RGB", 0xddee00, d._cacheRGB);
+            assertEquals("Checking 1, 1 getRedGreenBlue", 0x0ddee00, d.getRedGreenBlue());
+        }
+
+        [Test]
+        public function setBlueToOverflowedFFTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            d.blue = 0x5555;
+
+            assertEquals("Checking 1, 1 RGB", 0xddee55, d._cacheRGB);
+            assertEquals("Checking 1, 1 getRedGreenBlue", 0xddee55, d.getRedGreenBlue());
+        }
+
+        [Test]
+        public function getRedTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            assertEquals("Checking 1, 1 red", 0xdd, d.red);
+        }
+
+        [Test]
+        public function getGreenTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            assertEquals("Checking 1, 1 green", 0xee, d.green);
+        }
+
+        [Test]
+        public function getBlueTest():void
+        {
+            var d:BitmapDataCell = new BitmapDataCell(null, data, 1, 1);
+
+            assertEquals("Checking 1, 1 blue", 0xff, d.blue);
+        }
     }
 }

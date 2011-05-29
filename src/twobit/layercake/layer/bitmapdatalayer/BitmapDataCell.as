@@ -21,9 +21,21 @@ package twobit.layercake.layer.bitmapdatalayer
         public var _l:BitmapDataCell;
         public var _r:BitmapDataCell;
 
+        /**
+         * Cached red value. Treat as readonly. Also, it may be wrong when you least expect it.
+         */
         public var _cacheR:uint;
+        /**
+         * Cached gree value. Treat as readonly. Also, it may be wrong when you least expect it.
+         */
         public var _cacheG:uint;
+        /**
+         * Cached blue value. Treat as readonly. Also, it may be wrong when you least expect it.
+         */
         public var _cacheB:uint;
+        /**
+         * Cached RGB value. Treat as readonly. Also, it may be wrong when you least expect it.
+         */
         public var _cacheRGB:uint;
 
         public function BitmapDataCell(layer:BitmapDataLayer, source:BitmapData, x:int, y:int):void
