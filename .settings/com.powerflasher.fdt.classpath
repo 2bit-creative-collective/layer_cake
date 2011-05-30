@@ -10,5 +10,5 @@
     <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">libs/flexunit/flexunit-uilistener-4.0.0.swc</AS3Classpath>
     <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">libs/flexunit/hamcrest-as3-1.1.0.swc</AS3Classpath>
     <AS3Classpath generateProblems="true" sdkBased="false" type="source" useAsSharedCode="false">src-test</AS3Classpath>
-    <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">libs/flexunit_visualiser.swc</AS3Classpath>
+    <AS3Classpath generateProblems="false" sdkBased="false" type="lib" useAsSharedCode="false">libs/flexunit_visual_listener/release/flexunit_visualiser.swc</AS3Classpath>
 </AS3Classpath>

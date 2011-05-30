@@ -1,0 +1,3 @@
+[submodule "libs/flexunit_visual_listener"]
+	path = libs/flexunit_visual_listener
+	url = git://github.com/mnem/flexunit_visual_listener.git
