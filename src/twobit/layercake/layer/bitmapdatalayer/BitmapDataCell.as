@@ -142,5 +142,10 @@ package twobit.layercake.layer.bitmapdatalayer
         {
             return _r;
         }
+
+        public function toString():String
+        {
+            return "[object BitmapDataCell{x: " + _x + ", y: " + _y + "}]";
+        }
     }
 }
